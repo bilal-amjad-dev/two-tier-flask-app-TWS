@@ -24,6 +24,15 @@ Before you begin, make sure you have the following installed:
    cd your-repo-name
    ```
 
+### Note: 
+
+### Do you need the `.env` file?
+**Technically, No.** You can put the environment variables directly inside the `docker-compose.yaml` file under the `environment:` section. 
+*   **However:** Using a `.env` file is "Best Practice" because it keeps secrets (like passwords) out of your main code. If you use the `docker-compose.yaml` I gave you earlier with the variables inside it, you don't need a separate `.env` file for a simple lab.
+
+
+
+
 3. Create a `.env` file in the project directory to store your MySQL environment variables:
 
    ```bash
@@ -51,6 +60,16 @@ Before you begin, make sure you have the following installed:
 
    - Frontend: http://localhost
    - Backend: http://localhost:5000
+
+
+### Note: 
+
+
+
+### Do you need to create the table manually?
+**No.** Since your `app.py` has the `init_db()` function with `CREATE TABLE IF NOT EXISTS`, the application will create the table for you the first time it connects to the database. This is much better for a DevOps portfolio because it shows **Automation**.
+
+---
 
 3. Create the `messages` table in your MySQL database:
 
