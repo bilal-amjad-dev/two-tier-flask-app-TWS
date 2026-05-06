@@ -10,6 +10,8 @@ Before you begin, make sure you have the following installed:
 - Docker
 - Git (optional, for cloning the repository)
 
+### This is a great point. If your code is already handling the database initialization and looking for environment variables, you can make your `README` much cleaner and more automated.
+
 ## Setup
 
 1. Clone this repository (if you haven't already):
